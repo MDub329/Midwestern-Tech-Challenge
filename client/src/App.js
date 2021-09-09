@@ -1,7 +1,8 @@
 import React from "react";
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import { Navigation, Home, Contact } from "./components";
 function App() {
   const [data, setData] = React.useState(null);
 
