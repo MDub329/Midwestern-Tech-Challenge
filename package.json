@@ -20,5 +20,8 @@
   "homepage": "https://github.com/MDub329/Midwestern-Tech-Challenge#readme",
   "engines": {
     "node": "12.15.0"
+  },
+  "dependencies": {
+    "express": "*"
   }
 }
