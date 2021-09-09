@@ -2,6 +2,8 @@
 
 body{
     background:#222222;
+    font-family: 'Poppins', sans-serif;
+    min-width: 1920px;
 }
 .header{
     height: 140px;
@@ -15,7 +17,6 @@ body{
         color: #DEBF79;
         padding: 40px 200px 0px 0px;
         text-decoration: none;
-        font-family: 'Poppins', sans-serif;
         font-weight: bold;
     }
 .contentBoxes{
@@ -24,8 +25,8 @@ body{
 }
 
 .columnImg{
-    width: 200px;/*example only*/
-    height: 150px;/*example only*/
+    width: 200px;
+    height: 150px;
     margin: 0 auto;
     text-align: center;
 }
@@ -37,16 +38,28 @@ body{
 
 .column {
     display: inline-block;  
-    height: 450px;
+    height: 85%;
+    width: 25%;
     column-gap: 5px;
     background: white;
-    margin: 10px 20px 10px 20px;
+    margin: 5px 20px 5px 20px;
     display: inline-block;
     vertical-align: middle;
+    border-radius: 5px;
 }
 
+    .column > h1{
+        font-size: 40px;
+        padding: 0px 80px 0px 80px;
+        text-align: left;
+        margin: 0px 5px 0px 5px;
+    }
+
     .column > p{
-        padding: 0px 10px 0px 10px;
+        padding: 0px 80px 15px 80px;
+        text-align: justify;
+        color: #858585;
+        font-size: 15px;
     }
     
   
@@ -54,4 +67,48 @@ body{
     display: inline-block;
     height: 100%;
     vertical-align: middle;
+}
+
+.button {
+    background-color: #DEBF79;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+.footer{
+    height: 250px;
+}
+
+    .footer > h1{
+        font-size: 60px;
+        text-align: left;
+        color: white;
+        padding: 0px 0px 0px 200px;
+    }
+
+    .footer > p{
+        padding: 0px 200px 0px 200px;
+        text-align: left;
+        color: white;
+        font-size: 20px;
+    }
+.firstWord{
+    border-bottom: 5px solid #DEBF79;
+    padding-bottom: 5px;
+}
+
+#footerLink{
+    color: #DEBF79;
+    background:none; 
+    border:none;  
+    font-size: 20px;
+}
+
+#footerLink:hover{
+    cursor: pointer;
 }
