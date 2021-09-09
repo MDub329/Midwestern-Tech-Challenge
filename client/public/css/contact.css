@@ -1,0 +1,22 @@
+body{
+    background:#222222;
+}
+
+#background {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: pink;
+    z-index: 1;
+}
+
+#content {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}

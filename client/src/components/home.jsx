@@ -1,26 +1,45 @@
 import React from "react";
+import logo from "../assests/midwesternLogo.png";
+import talkie from "../assests/Talkie.png";
+import rabbit from "../assests/Rabbit.png";
+import shield from "../assests/Shield.png";
 
 function Home() {
+    const [data, setData] = React.useState(null);
+    React.useEffect(() => {
+        fetch("/HeaderInfo")
+            .then((res) => res.json())
+            .then((data) => setData(data.message));
+    }, []);
     return (
-        <div className="home">
-            <div class="container">
-                <div class="row align-items-center my-5">
-                    <div class="col-lg-7">
-                        <img
-                            class="img-fluid rounded mb-4 mb-lg-0"
-                            src="http://placehold.it/900x400"
-                            alt=""
-                        />
+        <div>
+            <link rel="stylesheet" href="/css/home.css" />
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
+            <div className="header">
+                <img src={logo} alt="logo" />
+                <a href='/contact'>Contact</a>
+            </div >
+            <div class="contentBoxes">
+                <div class="column">
+                    <div class="columnImg"><img src={talkie} alt="talkie" /></div>
+                    <h1>Heading two</h1>
+                    <p>{!data ? "Loading..." : data}</p>
+                </div>
+                <div class="column">
+                    <div class="columnImg">
+                        <span class="helper"></span>
+                        <img src={rabbit} alt="rabbit" />
                     </div>
-                    <div class="col-lg-5">
-                        <h1 class="font-weight-light">Home</h1>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy text
-                            ever since the 1500s, when an unknown printer took a galley of
-                            type and scrambled it to make a type specimen book.
-                        </p>
+                    <h1>Heading two</h1>
+                    <p>{!data ? "Loading..." : data}</p>
+                </div>
+                <div class="column">
+                    <div class="columnImg">
+                        <span class="helper"></span>
+                        <img src={shield} alt="shield" />
                     </div>
+                    <h1>Heading two</h1>
+                    <p>{!data ? "Loading..." : data}</p>
                 </div>
             </div>
         </div>
