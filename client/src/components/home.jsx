@@ -1,8 +1,4 @@
 import React from "react";
-import logo from "../assests/midwesternLogo.png";
-import talkie from "../assests/Talkie.png";
-import rabbit from "../assests/Rabbit.png";
-import shield from "../assests/Shield.png";
 
 const initialList1 = [
     'Matt Johnson', 'Bart Paden', 'Ryan Doss', 'Jared Malcolm'
@@ -52,12 +48,12 @@ function Home() {
             <link rel="stylesheet" href="/css/home.css" />
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
             <div class="header">
-                <img src={logo} alt="logo" />
+                <img src={process.env.PUBLIC_URL + '/assests/midwesternLogo.png'} alt="logo" />
                 <a href='/contact'>contact</a>
             </div >
             <div class="contentBoxes">
                 <div class="column">
-                    <div class="columnImg"><img src={talkie} alt="talkie" /></div>
+                    <div class="columnImg"><img src={!data ? "Loading..." : process.env.PUBLIC_URL + '/assests/' + obj[0].url} alt="talkie" /></div>
                     <h1>{!data ? "Loading..." : obj[0].header_title}</h1>
                     <p>{!data ? "Loading..." : obj[0].content}</p>
                     <button class="button">Learn More</button>
@@ -65,7 +61,7 @@ function Home() {
                 <div class="column">
                     <div class="columnImg">
                         <span class="helper"></span>
-                        <img src={rabbit} alt="rabbit" />
+                        <img src={!data ? "Loading..." : process.env.PUBLIC_URL + '/assests/' + obj[1].url} alt="rabbit" />
                     </div>
                     <h1>{!data ? "Loading..." : obj[1].header_title}</h1>
                     <p>{!data ? "Loading..." : obj[1].content}</p>
@@ -74,7 +70,7 @@ function Home() {
                 <div class="column">
                     <div class="columnImg">
                         <span class="helper"></span>
-                        <img src={shield} alt="shield" />
+                        <img src={!data ? "Loading..." : process.env.PUBLIC_URL + '/assests/' + obj[2].url} alt="shield" />
                     </div>
                     <h1>{!data ? "Loading..." : obj[2].header_title}</h1>
                     <p>{!data ? "Loading..." : obj[2].content}</p>
