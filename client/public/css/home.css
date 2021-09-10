@@ -112,3 +112,7 @@ body{
 #footerLink:hover{
     cursor: pointer;
 }
+li{
+    color: white;
+    list-style-type: none;
+}

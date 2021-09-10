@@ -4,8 +4,19 @@ import talkie from "../assests/Talkie.png";
 import rabbit from "../assests/Rabbit.png";
 import shield from "../assests/Shield.png";
 
+const initialList1 = [
+    'Matt Johnson', 'Bart Paden', 'Ryan Doss', 'Jared Malcolm'
+]
+const initialList2 = [
+    'Matt Johnson', 'Bart Paden', 'Jordan Heigle', 'Tyler Viles'
+]
+
+let finalList;
+let isPuzzleComplete = false;
+
 function Home() {
     const [data, setData] = React.useState(null);
+    const [list, setList] = React.useState(finalList);
     React.useEffect(() => {
         fetch("/HeaderInfo")
             .then((res) => res.json())
@@ -13,8 +24,24 @@ function Home() {
     }, []);
 
     function handleFooterClick() {
-        console.log('click');
+        finalList = [];
+        if (!isPuzzleComplete) {
+            concatList(initialList1);
+            concatList(initialList2);
+            setList(finalList);
+            isPuzzleComplete = true;
+        } else {
+            alert("Puzzle has already been solved!")
+        }
+    }
 
+    //Add items from passed list(ignore duplicates) to finalList
+    function concatList(passedList) {
+        for (let i = 0; i < passedList.length; i++) {
+            if (!finalList.includes(passedList[i])) {
+                finalList.push(initialList1[i]);
+            }
+        }
     }
 
     const obj = JSON.parse(data);
@@ -57,6 +84,13 @@ function Home() {
                 <p>Remove the duplicates in 2 Javascript objects and output the list of distinct names in an unordered list when<button onClick={handleFooterClick} id='footerLink'>this link</button>is clicked.  If the operation has been completed already notify the user that this has already been done</p>
                 <ul id='jsPuzzleList'></ul>
             </div>
+            {!finalList ? "" :
+                <ul>
+                    {list.map((item) => (
+                        <li>{item}</li>
+                    ))}
+                </ul>}
+
             <script src="/js/home.js"></script>
         </div>
     );
