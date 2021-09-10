@@ -30,14 +30,21 @@ body{
         margin: 15px;
     }
     .contactForm >textarea{
-        width: 34%;
         border: none;;
         background-color: #F5F5F5;
         padding: 20px;
         margin: 15px;
         resize: none;
         font-family: 'Poppins', sans-serif;
+        width: 75%;
+        height: 200px;
+        text-align: top;
     }
+
+.firstWord{
+    border-bottom: 5px solid #DEBF79;
+    padding-bottom: 5px;
+}   
 
 .header{
     height: 140px;
@@ -56,12 +63,6 @@ body{
         float:left;
         padding: 15px 0px 0px 200px;
     }
-
-.firstWord{
-    border-bottom: 5px solid #DEBF79;
-    padding-bottom: 5px;
-}
-
 
 .leftHeader{
     height: 250px;
@@ -99,9 +100,89 @@ body{
     }
 
 
-#message{
-    width: 75%;
-    height: 200px;
-    text-align: top;
-}
     
+@media only screen and (max-width: 600px) {
+    body {
+        min-width: 600px;
+    }
+
+    .button{
+        background-color: #DEBF79;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        width: 20%;
+        display: block;
+        margin-left: 250px;
+    }
+
+    .contactForm > input[type=text]{
+        width: 80%;
+        border: none;;
+        background-color: #F5F5F5;
+        padding: 20px;
+        margin:15px 40px 15px 40px;
+    }
+    .contactForm >textarea{
+        width: 80%;
+        border: none;;
+        background-color: #F5F5F5;
+        padding: 20px;
+        margin: 15px 40px 15px 40px;
+        resize: none;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .header{
+        height: 100px;
+        position: absolute;
+        width: 600px;
+        margin: 0px;
+    }
+        .header > a{
+            float: right;
+            color: #DEBF79;
+            padding: 40px 40px 0px 0px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .header > img{
+            float:left;
+            padding: 15px 0px 0px 40px;
+        }
+
+    .leftHeader{
+        height: 500px;
+        background:#222222;
+        margin: 0px;
+        width: 100%;
+    }
+        .leftHeader > h1{
+            font-size: 60px;
+            text-align: left;
+            color: white;
+            padding: 80px 0px 0px 40px;
+        }
+        .leftHeader > p{
+            padding: 0px 40px 0px 40px;
+            text-align: justify;
+            color: white;
+            font-size: 20px;
+        }
+    
+    .rightHeader{
+        height: 500px;
+        background: white;
+        margin: 0px;
+        width: 100%;
+    }
+        .rightHeader > h2{
+            font-size: 40px;
+            text-align: left;
+            padding: 0px 0px 0px 40px;
+        }
+}

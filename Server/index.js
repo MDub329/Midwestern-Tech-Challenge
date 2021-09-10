@@ -28,7 +28,7 @@ app.post("/ContactInfo", async (req, res) => {
             last_name: req.body.last_name,
             title: req.body.title,
             email: req.body.email,
-            essage: req.body.message
+            message: req.body.message
         })
         .then(function (result) {
             res.json({ success: true });
