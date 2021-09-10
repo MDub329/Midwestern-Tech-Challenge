@@ -26,8 +26,7 @@ function Home() {
     function handleFooterClick() {
         finalList = [];
         if (!isPuzzleComplete) {
-            concatList(initialList1);
-            concatList(initialList2);
+            finalList = initialList1.concat(initialList2).unique();
             setList(finalList);
             isPuzzleComplete = true;
         } else {
@@ -35,14 +34,17 @@ function Home() {
         }
     }
 
-    //Add items from passed list(ignore duplicates) to finalList
-    function concatList(passedList) {
-        for (let i = 0; i < passedList.length; i++) {
-            if (!finalList.includes(passedList[i])) {
-                finalList.push(initialList1[i]);
+    Array.prototype.unique = function () {
+        var a = this.concat();
+        for (var i = 0; i < a.length; ++i) {
+            for (var j = i + 1; j < a.length; ++j) {
+                if (a[i] === a[j])
+                    a.splice(j--, 1);
             }
         }
-    }
+
+        return a;
+    };
 
     const obj = JSON.parse(data);
     return (
