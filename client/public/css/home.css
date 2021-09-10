@@ -11,6 +11,10 @@ li{
     list-style-type: none;
 }
 
+ul{
+    padding: 0px;
+}
+
 .button {
     background-color: #DEBF79;
     border: none;
