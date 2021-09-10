@@ -19,11 +19,24 @@ app.get("/HeaderInfo", (req, res) => {
 });
 
 app.post("/ContactInfo", (req, res) => {
-    // knex.select()
-    //     .from('Heading_Content')
-    //     .then((todos) => {
-    //         res.json({ message: JSON.stringify(todos) });
-    //     })
+    knex('Contact_Info')
+        .insert({
+            FirstName: request.body.firstName,
+            LastName: request.body.lastName,
+            Title: request.body.title,
+            Email: request.body.email,
+            Message: request.body.message
+        })
+        .then(function (result) {
+            res.json({ success: true });
+        })
+        .catch(function (err) {
+            console.log(err)
+            res.json({
+                success: false,
+                Error: err
+            })
+        })
 
 });
 
