@@ -53,13 +53,13 @@ function Contact() {
                 </div>
                 <div class='rightHeader'>
                     <h2>Heading Two</h2>
-                    <form onSubmit={submitContactForm}>
+                    <form class='contactForm' onSubmit={submitContactForm}>
                         <input type="text" id="fname" name="fname" placeholder="First Name" />
                         <input type="text" id="lname" name="lname" placeholder="Last Name" />
                         <input type="text" id="title" name="title" placeholder="Title" />
                         <input type="text" id="email" name="email" placeholder="Email" />
-                        <input type="text" id="message" name="message" placeholder="Message" />
-                        <input type="submit" value="Submit" />
+                        <textarea type="text" id="message" name="message" placeholder="Message" />
+                        <input type="submit" class="button" value="Submit" />
                     </form>
                 </div>
             </div>

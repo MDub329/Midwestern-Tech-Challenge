@@ -3,6 +3,42 @@ body{
     min-width: 1920px;
 }
 
+.button{
+    background-color: #DEBF79;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 15%;
+    display: block;
+    margin-left: 410px;
+}
+    .button:hover{
+        cursor: pointer;
+    }
+
+.contactForm::placeholder{
+    font-family: 'Poppins', sans-serif;
+}
+    .contactForm > input[type=text]{
+        width: 34%;
+        border: none;;
+        background-color: #F5F5F5;
+        padding: 20px;
+        margin: 15px;
+    }
+    .contactForm >textarea{
+        width: 34%;
+        border: none;;
+        background-color: #F5F5F5;
+        padding: 20px;
+        margin: 15px;
+        resize: none;
+        font-family: 'Poppins', sans-serif;
+    }
+
 .header{
     height: 140px;
     position: absolute;
@@ -63,5 +99,9 @@ body{
     }
 
 
-
+#message{
+    width: 75%;
+    height: 200px;
+    text-align: top;
+}
     
