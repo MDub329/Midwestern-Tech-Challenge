@@ -33,14 +33,12 @@ li{
     vertical-align: middle;
     border-radius: 5px;
 }
-
     .column > h1{
         font-size: 40px;
         padding: 0px 80px 0px 80px;
         text-align: left;
         margin: 0px 0px 0px 0px;
     }
-
     .column > p{
         padding: 0px 80px 15px 80px;
         text-align: justify;
@@ -54,7 +52,6 @@ li{
     margin: 0 auto;
     text-align: center;
 }
-    
     .columnImg > img{
         padding-top: 20px;
         vertical-align: middle;
@@ -73,14 +70,12 @@ li{
 .footer{
     height: 250px;
 }
-
     .footer > h1{
         font-size: 60px;
         text-align: left;
         color: white;
         padding: 0px 0px 0px 200px;
     }
-
     .footer > p{
         padding: 0px 200px 0px 200px;
         text-align: left;
@@ -91,16 +86,16 @@ li{
 .header{
     height: 140px;
 }
-    .header > img{
-        float:left;
-        padding: 15px 0px 0px 200px;
-    }
     .header > a{
         float: right;
         color: #DEBF79;
         padding: 40px 200px 0px 0px;
         text-decoration: none;
         font-weight: bold;
+    }
+    .header > img{
+        float:left;
+        padding: 15px 0px 0px 200px;
     }
  
 .helper {
