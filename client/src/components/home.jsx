@@ -26,7 +26,7 @@ function Home() {
     function handleFooterClick() {
         finalList = [];
         if (!isPuzzleComplete) {
-            finalList = initialList1.concat(initialList2).unique();
+            finalList = arrayUnique(initialList1.concat(initialList2));
             setList(finalList);
             isPuzzleComplete = true;
         } else {
@@ -34,8 +34,8 @@ function Home() {
         }
     }
 
-    Array.prototype.unique = function () {
-        var a = this.concat();
+    function arrayUnique(array) {
+        var a = array.concat();
         for (var i = 0; i < a.length; ++i) {
             for (var j = i + 1; j < a.length; ++j) {
                 if (a[i] === a[j])
@@ -44,7 +44,7 @@ function Home() {
         }
 
         return a;
-    };
+    }
 
     const obj = JSON.parse(data);
     return (
