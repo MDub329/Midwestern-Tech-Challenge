@@ -5,35 +5,21 @@ body{
     font-family: 'Poppins', sans-serif;
     min-width: 1920px;
 }
-.header{
-    height: 140px;
-}
-    .header > img{
-        float:left;
-        padding: 15px 0px 0px 200px;
-    }
-    .header > a{
-        float: right;
-        color: #DEBF79;
-        padding: 40px 200px 0px 0px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-.contentBoxes{
-    height: 500px;
-    padding-top: 25px;
+
+li{
+    color: white;
+    list-style-type: none;
 }
 
-.columnImg{
-    width: 200px;
-    height: 150px;
-    margin: 0 auto;
+.button {
+    background-color: #DEBF79;
+    border: none;
+    color: white;
+    padding: 15px 32px;
     text-align: center;
-}
-
-    .columnImg > img{
-    padding-top: 20px;
-    vertical-align: middle;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 .column {
@@ -52,7 +38,7 @@ body{
         font-size: 40px;
         padding: 0px 80px 0px 80px;
         text-align: left;
-        margin: 0px 5px 0px 5px;
+        margin: 0px 0px 0px 0px;
     }
 
     .column > p{
@@ -61,24 +47,28 @@ body{
         color: #858585;
         font-size: 15px;
     }
+
+.columnImg{
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+}
     
-  
-.helper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+    .columnImg > img{
+        padding-top: 20px;
+        vertical-align: middle;
+    }
+
+.contentBoxes{
+    height: 500px;
+    padding-top: 25px;
 }
 
-.button {
-    background-color: #DEBF79;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
+.firstWord{
+    border-bottom: 5px solid #DEBF79;
+    padding-bottom: 5px;
+}
 
 .footer{
     height: 250px;
@@ -97,9 +87,26 @@ body{
         color: white;
         font-size: 20px;
     }
-.firstWord{
-    border-bottom: 5px solid #DEBF79;
-    padding-bottom: 5px;
+
+.header{
+    height: 140px;
+}
+    .header > img{
+        float:left;
+        padding: 15px 0px 0px 200px;
+    }
+    .header > a{
+        float: right;
+        color: #DEBF79;
+        padding: 40px 200px 0px 0px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+ 
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 #footerLink{
@@ -111,8 +118,4 @@ body{
 
 #footerLink:hover{
     cursor: pointer;
-}
-li{
-    color: white;
-    list-style-type: none;
 }
