@@ -28,7 +28,7 @@ app.post("/ContactInfo", async (req, res) => {
             last_name: req.body.last_name,
             title: req.body.title,
             email: req.body.email,
-            message: req.body.message
+            essage: req.body.message
         })
         .then(function (result) {
             res.json({ success: true });
@@ -43,9 +43,8 @@ app.post("/ContactInfo", async (req, res) => {
 
 });
 
-// All other GET requests not handled before will return our React app
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, '../client/public', 'index.html'));
 });
 
 app.listen(PORT, () => {
