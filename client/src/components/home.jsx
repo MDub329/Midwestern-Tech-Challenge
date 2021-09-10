@@ -53,7 +53,10 @@ function Home() {
             </div >
             <div class="contentBoxes">
                 <div class="column">
-                    <div class="columnImg"><img src={!data ? "Loading..." : process.env.PUBLIC_URL + '/assests/' + obj[0].url} alt="talkie" /></div>
+                    <div class="columnImg">
+                        <span class="helper"></span>
+                        {!data ? "" : <img src={!data ? "" : process.env.PUBLIC_URL + '/assests/' + obj[0].url} alt="talkie" />}
+                    </div>
                     <h1>{!data ? "Loading..." : obj[0].header_title}</h1>
                     <p>{!data ? "Loading..." : obj[0].content}</p>
                     <button class="button">Learn More</button>
@@ -61,7 +64,7 @@ function Home() {
                 <div class="column">
                     <div class="columnImg">
                         <span class="helper"></span>
-                        <img src={!data ? "Loading..." : process.env.PUBLIC_URL + '/assests/' + obj[1].url} alt="rabbit" />
+                        {!data ? "" : <img src={!data ? "" : process.env.PUBLIC_URL + '/assests/' + obj[1].url} alt="talkie" />}
                     </div>
                     <h1>{!data ? "Loading..." : obj[1].header_title}</h1>
                     <p>{!data ? "Loading..." : obj[1].content}</p>
@@ -70,7 +73,7 @@ function Home() {
                 <div class="column">
                     <div class="columnImg">
                         <span class="helper"></span>
-                        <img src={!data ? "Loading..." : process.env.PUBLIC_URL + '/assests/' + obj[2].url} alt="shield" />
+                        {!data ? "" : <img src={!data ? "" : process.env.PUBLIC_URL + '/assests/' + obj[2].url} alt="talkie" />}
                     </div>
                     <h1>{!data ? "Loading..." : obj[2].header_title}</h1>
                     <p>{!data ? "Loading..." : obj[2].content}</p>
