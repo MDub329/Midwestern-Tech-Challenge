@@ -30,7 +30,7 @@ function Home() {
             setList(finalList);
             isPuzzleComplete = true;
         } else {
-            alert("Puzzle has already been solved!")
+            alert("Puzzle has already been solved!");
         }
     }
 
@@ -51,7 +51,7 @@ function Home() {
         <div>
             <link rel="stylesheet" href="/css/home.css" />
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
-            <div className="header">
+            <div class="header">
                 <img src={logo} alt="logo" />
                 <a href='/contact'>contact</a>
             </div >

@@ -3,14 +3,65 @@ body{
     min-width: 1920px;
 }
 
-.leftColumn{
-    background: #222222;
-    float: left;
-    width: 50%;
+.header{
+    height: 140px;
+    position: absolute;
+    width: 1920px;
+}
+    .header > a{
+        float: right;
+        color: #DEBF79;
+        padding: 40px 200px 0px 0px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .header > img{
+        float:left;
+        padding: 15px 0px 0px 200px;
+    }
+
+.firstWord{
+    border-bottom: 5px solid #DEBF79;
+    padding-bottom: 5px;
 }
 
-.rightColumn{
-    background: white;
-    float: left;
+
+.leftHeader{
+    height: 250px;
     width: 50%;
+    background:#222222;
+    margin: 0px;
+    float: left;
+    height: 100vh;
 }
+    .leftHeader > h1{
+        font-size: 60px;
+        text-align: left;
+        color: white;
+        padding: 300px 0px 0px 200px;
+    }
+    .leftHeader > p{
+        padding: 0px 200px 0px 200px;
+        text-align: left;
+        color: white;
+        font-size: 20px;
+    }
+
+.rightHeader{
+    height: 250px;
+    width: 50%;
+    background: white;
+    margin: 0px;
+    float: left;
+    height: 100vh;
+}
+    .rightHeader > h2{
+        font-size: 40px;
+        text-align: left;
+        padding: 200px 0px 0px 100px;
+    }
+
+
+
+    
