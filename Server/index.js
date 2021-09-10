@@ -14,7 +14,7 @@ app.use(bp.urlencoded({ extended: true }))
 
 app.get("/HeaderInfo", (req, res) => {
     knex.select()
-        .from('Heading_Content')
+        .from('heading_content')
         .then((todos) => {
             res.json({ message: JSON.stringify(todos) });
         })
@@ -22,13 +22,13 @@ app.get("/HeaderInfo", (req, res) => {
 });
 
 app.post("/ContactInfo", async (req, res) => {
-    knex('Contact_Info')
+    knex('contact_info')
         .insert({
-            FirstName: req.body.firstName,
-            LastName: req.body.lastName,
-            Title: req.body.title,
-            Email: req.body.email,
-            Message: req.body.message
+            first_name: req.body.first_name,
+            last_name: req.body.last_name,
+            title: req.body.title,
+            email: req.body.email,
+            message: req.body.message
         })
         .then(function (result) {
             res.json({ success: true });

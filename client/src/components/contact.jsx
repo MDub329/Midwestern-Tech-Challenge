@@ -18,8 +18,8 @@ function Contact() {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                firstName: e.target.fname.value,
-                lastName: e.target.lname.value,
+                first_name: e.target.fname.value,
+                last_name: e.target.lname.value,
                 title: e.target.title.value,
                 email: e.target.email.value,
                 message: e.target.message.value,
@@ -48,8 +48,8 @@ function Contact() {
                 <div class='leftHeader'>
 
                     <h1><span class="firstWord">Heading</span> One</h1>
-                    <p>{!data ? "Loading..." : obj[0].Content}</p>
-                    <p>{!data ? "Loading..." : obj[1].Content}</p>
+                    <p>{!data ? "Loading..." : obj[0].content}</p>
+                    <p>{!data ? "Loading..." : obj[1].content}</p>
                 </div>
                 <div class='rightHeader'>
                     <h2>Heading Two</h2>

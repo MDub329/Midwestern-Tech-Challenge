@@ -58,8 +58,8 @@ function Home() {
             <div class="contentBoxes">
                 <div class="column">
                     <div class="columnImg"><img src={talkie} alt="talkie" /></div>
-                    <h1>{!data ? "Loading..." : obj[0].HeaderTitle}</h1>
-                    <p>{!data ? "Loading..." : obj[0].Content}</p>
+                    <h1>{!data ? "Loading..." : obj[0].header_title}</h1>
+                    <p>{!data ? "Loading..." : obj[0].content}</p>
                     <button class="button">Learn More</button>
                 </div>
                 <div class="column">
@@ -67,8 +67,8 @@ function Home() {
                         <span class="helper"></span>
                         <img src={rabbit} alt="rabbit" />
                     </div>
-                    <h1>{!data ? "Loading..." : obj[1].HeaderTitle}</h1>
-                    <p>{!data ? "Loading..." : obj[1].Content}</p>
+                    <h1>{!data ? "Loading..." : obj[1].header_title}</h1>
+                    <p>{!data ? "Loading..." : obj[1].content}</p>
                     <button class="button">Learn More</button>
                 </div>
                 <div class="column">
@@ -76,8 +76,8 @@ function Home() {
                         <span class="helper"></span>
                         <img src={shield} alt="shield" />
                     </div>
-                    <h1>{!data ? "Loading..." : obj[2].HeaderTitle}</h1>
-                    <p>{!data ? "Loading..." : obj[2].Content}</p>
+                    <h1>{!data ? "Loading..." : obj[2].header_title}</h1>
+                    <p>{!data ? "Loading..." : obj[2].content}</p>
                     <button class="button">Learn More</button>
                 </div>
             </div>
