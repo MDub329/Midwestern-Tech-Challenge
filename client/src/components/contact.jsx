@@ -6,7 +6,13 @@ function Contact() {
     React.useEffect(() => {
         fetch("/HeaderInfo")
             .then((res) => res.json())
-            .then((data) => setData(data.message));
+            .then((data) => {
+                if (data.success) {
+                    setData(data.message);
+                } else {
+                    alert('Get Data Failed. Reason: ' + data.error);
+                }
+            })
     }, []);
     const obj = JSON.parse(data);
 
@@ -25,12 +31,13 @@ function Contact() {
             })
         };
         fetch('/ContactInfo', requestOptions)
-            .then(function (result) {
-                console.log(result);
-                if (result.ok) {
+            .then((response) => response.json())
+            .then((responseData) => {
+                console.log(responseData);
+                if (responseData.success) {
                     alert('Success!');
                 } else {
-                    alert('Post Failed. Please try again');
+                    alert('Post Failed. Reason: ' + responseData.error);
                 }
             });
 

@@ -16,22 +16,7 @@ app.get("/HeaderInfo", (req, res) => {
     knex.select()
         .from('heading_content')
         .then((todos) => {
-            res.json({ message: JSON.stringify(todos) });
-        })
-
-});
-
-app.post("/ContactInfo", async (req, res) => {
-    knex('contact_info')
-        .insert({
-            first_name: req.body.first_name,
-            last_name: req.body.last_name,
-            title: req.body.title,
-            email: req.body.email,
-            message: req.body.message
-        })
-        .then(function (result) {
-            res.json({ success: true });
+            res.json({ success: true, message: JSON.stringify(todos) });
         })
         .catch(function (err) {
             console.log(err)
@@ -40,6 +25,41 @@ app.post("/ContactInfo", async (req, res) => {
                 Error: err
             })
         })
+
+});
+
+app.post("/ContactInfo", async (req, res) => {
+    let emptyObjectProperty = false;
+    for (var key in req.body) {
+        if (req.body[key] === "") {
+            emptyObjectProperty = true;
+        }
+    }
+    if (!emptyObjectProperty) {
+        knex('contact_info')
+            .insert({
+                first_name: req.body.first_name,
+                last_name: req.body.last_name,
+                title: req.body.title,
+                email: req.body.email,
+                message: req.body.message
+            })
+            .then(function (result) {
+                res.json({ success: true });
+            })
+            .catch(function (err) {
+                console.log(err)
+                res.json({
+                    success: false,
+                    Error: err
+                })
+            })
+    } else {
+        res.json({
+            success: false,
+            error: 'One of the fields sent is empty'
+        })
+    }
 
 });
 

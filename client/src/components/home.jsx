@@ -16,7 +16,13 @@ function Home() {
     React.useEffect(() => {
         fetch("/HeaderInfo")
             .then((res) => res.json())
-            .then((data) => setData(data.message));
+            .then((data) => {
+                if (data.success) {
+                    setData(data.message);
+                } else {
+                    alert('Get Data Failed. Reason: ' + data.error);
+                }
+            })
     }, []);
 
     function handleFooterClick() {
