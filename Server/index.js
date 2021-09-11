@@ -1,7 +1,9 @@
 const path = require('path');
+const dotenv = require('dotenv');
+dotenv.config({ path: __dirname + '/dev.env' });
 const express = require("express");
 const knex = require('./db');
-const bp = require('body-parser')
+const bp = require('body-parser');
 
 const PORT = process.env.PORT || 3001;
 
