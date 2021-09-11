@@ -111,7 +111,14 @@ body{
         text-align: left;
         padding: 200px 0px 0px 100px;
     }
-
+.topLine{
+    width: 150px;
+    height: 2px;
+    border-bottom: 2px solid black;
+    position: relative;
+    transform: rotate(45deg);
+    left: 60px;
+}
 
     
 @media only screen and (max-width: 600px) {

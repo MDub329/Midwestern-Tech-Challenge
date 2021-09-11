@@ -48,6 +48,7 @@ function Contact() {
             <div id="content">
                 <link rel="stylesheet" href="/css/contact.css" />
                 <div class="header">
+                    <div class="topLine"></div>
                     <img src={process.env.PUBLIC_URL + '/assests/midwesternLogo.png'} alt="logo" />
                     <a href='/'>home</a>
                 </div >
