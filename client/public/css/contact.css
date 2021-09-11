@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
-    min-width: 1920px;
 }
 
 .button{
@@ -9,16 +8,16 @@ body{
     border: none;
     color: white;
     padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
     font-size: 16px;
-    width: 15%;
-    display: block;
-    margin-left: 410px;
+    width: 130px;
 }
     .button:hover{
         cursor: pointer;
     }
+
+.buttonHolder{
+    text-align: center;
+}
 
 .contactForm{
     font-family: 'Poppins', sans-serif;
@@ -43,7 +42,6 @@ body{
         font-family: 'Poppins', sans-serif;
         width: 75%;
         height: 200px;
-        text-align: top;
     }
 
 .firstWord{
@@ -54,23 +52,23 @@ body{
 .header{
     height: 140px;
     position: absolute;
-    width: 1920px;
+    width: 100%;
 }
     .header > a{
         float: right;
         color: #DEBF79;
-        padding: 40px 100px 0px 0px;
+        padding: 40px 6vw 0px 0px;
         text-decoration: none;
         font-weight: bold;
         font-size: 20px;
     }
     .header > img{
         float:left;
-        padding: 15px 0px 0px 200px;
+        padding: 15px 0px 0px 10vw;
     }
 
 .line{
-    width: 100px;
+    width: 5%;
     height: 2px;
     border-bottom: 2px solid black;
     position: absolute;
@@ -78,7 +76,6 @@ body{
 }
 
 .leftHeader{
-    height: 250px;
     width: 50%;
     background:#222222;
     margin: 0px;
@@ -89,13 +86,13 @@ body{
         font-size: 60px;
         text-align: left;
         color: white;
-        padding: 300px 0px 0px 200px;
+        padding: 300px 0px 0px 10vw;
     }
     .leftHeader > p{
-        padding: 0px 200px 0px 200px;
+        padding: 0px 10vw 0px 10vw;
         text-align: left;
         color: white;
-        font-size: 20px;
+        font-size: 1vw;
     }
 
 .rightHeader{
@@ -121,7 +118,7 @@ body{
 }
 
     
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     body {
         min-width: 600px;
     }
@@ -135,9 +132,13 @@ body{
         text-decoration: none;
         font-size: 16px;
         width: 20%;
-        display: block;
-        margin-left: 250px;
+
     }
+
+    .buttonHolder{
+        text-align: center;
+        padding-bottom: 10px;
+     }
 
     .contactForm > input[type=text]{
         width: 80%;
@@ -159,8 +160,9 @@ body{
     .header{
         height: 100px;
         position: absolute;
-        width: 600px;
+        width: 100%;
         margin: 0px;
+        min-width: 500px;
     }
         .header > a{
             float: right;

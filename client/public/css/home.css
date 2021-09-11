@@ -3,7 +3,6 @@
 body{
     background:#222222;
     font-family: 'Poppins', sans-serif;
-    min-width: 1920px;
 }
 
 li{
@@ -24,6 +23,7 @@ ul{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+     font-family: 'Poppins', sans-serif;
 }
 
 .column {
@@ -38,7 +38,7 @@ ul{
     border-radius: 5px;
 }
     .column > h1{
-        font-size: 40px;
+        font-size: 2vw;
         padding: 0px 80px 0px 80px;
         text-align: left;
         margin: 0px 0px 0px 0px;
@@ -47,7 +47,7 @@ ul{
         padding: 0px 80px 15px 80px;
         text-align: justify;
         color: #858585;
-        font-size: 15px;
+        font-size: .8vw;
     }
 
 .columnImg{
@@ -93,13 +93,13 @@ ul{
     .header > a{
         float: right;
         color: #DEBF79;
-        padding: 40px 200px 0px 0px;
+        padding: 40px 10vw 0px 0px;
         text-decoration: none;
         font-weight: bold;
     }
     .header > img{
         float:left;
-        padding: 15px 0px 0px 200px;
+        padding: 15px 0px 0px 10vw;
         position: relative;
     }
  
@@ -129,7 +129,7 @@ ul{
     cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 850px) {
     body {
         min-width: 600px;
     }

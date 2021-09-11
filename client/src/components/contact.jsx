@@ -67,7 +67,9 @@ function Contact() {
                         <input type="text" id="title" name="title" placeholder="Title" />
                         <input type="text" id="email" name="email" placeholder="Email" />
                         <textarea type="text" id="message" name="message" placeholder="Message" />
-                        <input type="submit" class="button" value="Submit" />
+                        <div class="buttonHolder">
+                            <input type="submit" class="button" value="Submit" />
+                        </div>
                     </form>
                 </div>
             </div>
