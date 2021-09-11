@@ -1,5 +1,5 @@
 var parse = require('pg-connection-string').parse;
-var config = parse(process.env);
+var config = parse(process.env.DATABASE_URL);
 
 module.exports = {
   development: {
