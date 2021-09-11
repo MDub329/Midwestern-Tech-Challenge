@@ -64,7 +64,7 @@ body{
     }
     .header > img{
         float:left;
-        padding: 15px 0px 0px 10vw;
+        padding: 15px 0px 0px 8vw;
     }
 
 .line{
@@ -83,13 +83,13 @@ body{
     height: 100vh;
 }
     .leftHeader > h1{
-        font-size: 60px;
+        font-size: 4vw;
         text-align: left;
         color: white;
-        padding: 300px 0px 0px 10vw;
+        padding: 300px 8vw 0px 8vw;
     }
     .leftHeader > p{
-        padding: 0px 10vw 0px 10vw;
+        padding: 0px 8vw 0px 8vw;
         text-align: left;
         color: white;
         font-size: 1vw;
@@ -113,7 +113,7 @@ body{
     border-bottom: 2px solid black;
     position: relative;
     transform: rotate(45deg);
-    left: 60px;
+    left: .7vw;
 }
 
     

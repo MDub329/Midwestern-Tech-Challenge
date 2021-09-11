@@ -39,12 +39,12 @@ ul{
 }
     .column > h1{
         font-size: 2vw;
-        padding: 0px 80px 0px 80px;
+        padding: 0px 4vw 0px 4vw;
         text-align: left;
         margin: 0px 0px 0px 0px;
     }
     .column > p{
-        padding: 0px 80px 15px 80px;
+        padding: 0px 4vw 15px 4vw;
         text-align: justify;
         color: #858585;
         font-size: .8vw;
