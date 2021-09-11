@@ -22,7 +22,7 @@ app.get("/HeaderInfo", (req, res) => {
             console.log(err)
             res.json({
                 success: false,
-                Error: err
+                error: err
             })
         })
 
