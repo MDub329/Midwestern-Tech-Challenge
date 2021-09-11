@@ -25,6 +25,7 @@
     "express": "*",
     "knex": "^0.95.11",
     "pg": "^8.2.1",
-    "pg-connection-string": "^2.2.3"
+    "pg-connection-string": "^2.2.3",
+    "dotenv": "^8.2.0"
   }
 }
