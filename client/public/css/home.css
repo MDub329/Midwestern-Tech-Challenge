@@ -100,12 +100,22 @@ ul{
     .header > img{
         float:left;
         padding: 15px 0px 0px 200px;
+        position: relative;
     }
  
 .helper {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
+}
+
+.line{
+    width: 470px;
+    height: 2px;
+    border-bottom: 2px solid black;
+    position: relative;
+    transform: rotate(45deg);
+    left: -100px;
 }
 
 #footerLink{
@@ -152,6 +162,15 @@ ul{
             font-size: 15px;
         }
 
+    .columnLine{
+        width: 100px;
+        height: 2px;
+        border-bottom: 2px solid black;
+        position: relative;
+        top: 50px;
+        transform: rotate(45deg);
+        border-bottom-style: dotted;
+    }
     
     .footer{
         height: 300px;
@@ -184,4 +203,9 @@ ul{
             float:left;
             padding: 15px 0px 0px 50px;
         }
+
+    .line{
+        display: none;
+    }
+    
   }

@@ -59,6 +59,7 @@ function Contact() {
                 </div>
                 <div class='rightHeader'>
                     <h2>Heading Two</h2>
+                    <div class="line"></div>
                     <form class='contactForm' onSubmit={submitContactForm}>
                         <input type="text" id="fname" name="fname" placeholder="First Name" />
                         <input type="text" id="lname" name="lname" placeholder="Last Name" />

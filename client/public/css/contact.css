@@ -64,6 +64,14 @@ body{
         padding: 15px 0px 0px 200px;
     }
 
+.line{
+    width: 100px;
+    height: 2px;
+    border-bottom: 2px solid black;
+    position: absolute;
+    top: 460px;
+}
+
 .leftHeader{
     height: 250px;
     width: 50%;

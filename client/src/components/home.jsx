@@ -54,11 +54,13 @@ function Home() {
             <link rel="stylesheet" href="/css/home.css" />
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
             <div class="header">
+                <div class="line"></div>
                 <img src={process.env.PUBLIC_URL + '/assests/midwesternLogo.png'} alt="logo" />
                 <a href='/contact'>contact</a>
             </div >
             <div class="contentBoxes">
                 <div class="column">
+                    <div class="columnLine"></div>
                     <div class="columnImg">
                         <span class="helper"></span>
                         {!data ? "" : <img src={!data ? "" : process.env.PUBLIC_URL + '/assests/' + obj[0].url} alt="talkie" />}
@@ -68,6 +70,7 @@ function Home() {
                     <button class="button">Learn More</button>
                 </div>
                 <div class="column">
+                    <div class="columnLine"></div>
                     <div class="columnImg">
                         <span class="helper"></span>
                         {!data ? "" : <img src={!data ? "" : process.env.PUBLIC_URL + '/assests/' + obj[1].url} alt="talkie" />}
@@ -77,6 +80,7 @@ function Home() {
                     <button class="button">Learn More</button>
                 </div>
                 <div class="column">
+                    <div class="columnLine"></div>
                     <div class="columnImg">
                         <span class="helper"></span>
                         {!data ? "" : <img src={!data ? "" : process.env.PUBLIC_URL + '/assests/' + obj[2].url} alt="talkie" />}
