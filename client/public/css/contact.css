@@ -175,6 +175,10 @@ body{
             padding: 15px 0px 0px 40px;
         }
 
+    .line{
+        display: none;
+    }    
+
     .leftHeader{
         height: 500px;
         background:#222222;
